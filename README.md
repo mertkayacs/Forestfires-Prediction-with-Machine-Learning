@@ -14,4 +14,9 @@ UI of the classification part with DayofWeek,Month,Temperature,Humidity,Wind,Rai
 ![Image of Classification UI](https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/blob/master/Screenshot_1.PNG)
 
 
+UI of the classification part with DayofWeek,Month,Temperature,Humidity,Wind,Rain, X and Y (coordinates in 9x9 matrix ) , FWI values .
+
+![Image of Classification UI](https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/blob/master/Screenshot_2.PNG)
+
+
 Mert KAYA.
