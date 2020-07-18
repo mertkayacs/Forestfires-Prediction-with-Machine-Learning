@@ -9,6 +9,9 @@ https://colab.research.google.com/drive/1UegC-LTkQ8j3SR_Bxg1G_pohe3XOrIOu?usp=sh
 
 Some screenshots : 
 
-![alt text](http://https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/edit/master/README.md/to/Screenshot_1.PNG)
+UI of the classification part with DayofWeek,Month,Temperature,Humidity,Wind,Rain.
+
+![Image of Classification UI](https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/blob/master/Screenshot_1.PNG)
+
 
 Mert KAYA.
