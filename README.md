@@ -9,6 +9,6 @@ https://colab.research.google.com/drive/1UegC-LTkQ8j3SR_Bxg1G_pohe3XOrIOu?usp=sh
 
 Some screenshots : 
 
-![alt text](http://url/to/Screenshot_1.PNG)
+![alt text](http://https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/edit/master/README.md/to/Screenshot_1.PNG)
 
 Mert KAYA.
