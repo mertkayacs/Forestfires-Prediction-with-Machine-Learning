@@ -7,6 +7,10 @@ Explanation for each part and UI for predictions with user input is on colab lin
 
 https://colab.research.google.com/drive/1UegC-LTkQ8j3SR_Bxg1G_pohe3XOrIOu?usp=sharing
 
+In the some position points I inspired by my AI Professor Murat Ozbayoglu's Student's (Recep Bozer's) thesis which you can
+find in this link : https://www.researchgate.net/publication/257719631_Estimation_of_the_Burned_Area_in_Forest_Fires_Using_Computational_Intelligence_Techniques
+
+
 Some screenshots : 
 
 UI of the classification part with DayofWeek,Month,Temperature,Humidity,Wind,Rain.
