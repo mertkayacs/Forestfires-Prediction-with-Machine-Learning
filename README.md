@@ -1,26 +1,49 @@
-This is the project I created using ICU's Forest Fire dataset.
+# Forestfires-Prediction-with-Machine-Learning
 
-Problem is defined as regression but data consists mostly 0 which results in bigger MSE 
-this is why I transformed the problem into classification in the second part of colab.
+Machine learning experiments on the UCI forest fires dataset (Cortez and Morais, 2007) in a single Jupyter notebook. It first predicts the burned area as a regression problem, then turns it into a 5-class classification problem (very low to very high) using K-Means cluster centroids and fuzzy membership labels.
 
-Explanation for each part and UI for predictions with user input is on colab link.
+## How to run
 
-https://colab.research.google.com/drive/1UegC-LTkQ8j3SR_Bxg1G_pohe3XOrIOu?usp=sharing
+The whole project is one notebook, `Forestfires_prediction_with_Machine_Learning.ipynb`, written for Google Colab. The dataset is downloaded from the UCI archive at runtime, so no local data files are needed.
 
-In the some decision points I inspired by my AI Professor Murat Ozbayoglu's Student's (Recep Bozer's) thesis which you can
-find in this link : https://www.researchgate.net/publication/257719631_Estimation_of_the_Burned_Area_in_Forest_Fires_Using_Computational_Intelligence_Techniques
+Open the notebook in Google Colab (badge link at the top of the notebook) and run all cells. Interactive prediction forms are built with Colab form fields, so they only render in Colab.
 
+To run locally instead:
 
-Some screenshots : 
+```
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+jupyter notebook Forestfires_prediction_with_Machine_Learning.ipynb
+```
 
-UI of the classification part with DayofWeek,Month,Temperature,Humidity,Wind,Rain.
+When running locally, skip the `google.colab` Drive mount cell and the `#@param` form cells, which are Colab-only.
 
-![Image of Classification UI](https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/blob/master/Screenshot_1.PNG)
+Models used:
 
+- Regression: ordinary least squares, Ridge, Lasso, KNN regressor
+- Classification: KNN, SVM (linear and polynomial kernels), logistic regression, MLP, Gaussian process classifier
 
-UI of the classification part with DayofWeek,Month,Temperature,Humidity,Wind,Rain, X and Y (coordinates in 9x9 matrix ) , FWI values .
+## Screenshots
 
-![Image of Classification UI](https://github.com/mertkaya13/Forestfires-Prediction-with-Machine-Learning/blob/master/Screenshot_2.PNG)
+Prediction form for the classifier with month, day of week, temperature, humidity, wind and rain:
 
+![Classification UI](Screenshot_1.PNG)
 
-Mert KAYA.
+Prediction form for the classifier with X and Y grid coordinates and FWI values added:
+
+![Classification UI with all features](Screenshot_2.PNG)
+
+## Tech used
+
+- Python
+- scikit-learn
+- pandas, NumPy
+- Matplotlib, Seaborn
+- Jupyter / Google Colab
+
+## Status
+
+Coursework, 2020.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
