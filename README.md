@@ -27,6 +27,13 @@
   <a href="#quick-start"><img alt="Quick start" src="https://img.shields.io/badge/Quick%20start-1E2A38?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ij48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj48cGF0aCBkPSJNMTIgMTV2NXMzLjAzLS41NSA0LTJjMS4wOC0xLjYyIDAtNSAwLTUiLz48cGF0aCBkPSJNNC41IDE2LjVjLTEuNSAxLjI2LTIgNS0yIDVzMy43NC0uNSA1LTJjLjcxLS44NC43LTIuMTMtLjA5LTIuOTFhMi4xOCAyLjE4IDAgMCAwLTIuOTEtLjA5Ii8%2BPHBhdGggZD0iTTkgMTJhMjIgMjIgMCAwIDEgMi0zLjk1QTEyLjg4IDEyLjg4IDAgMCAxIDIyIDJjMCAyLjcyLS43OCA3LjUtNiAxMWEyMi40IDIyLjQgMCAwIDEtNCAyeiIvPjxwYXRoIGQ9Ik05IDEySDRzLjU1LTMuMDMgMi00YzEuNjItMS4wOCA1IC4wNSA1IC4wNSIvPjwvZz48L3N2Zz4%3D&logoColor=white"></a>
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/hero-dark.webp">
+    <img src="docs/assets/readme/hero-light.webp" alt="Notebook code that cross-validates KNN, SVM, MLP and Gaussian process classifiers" width="960">
+  </picture>
+</p>
+
 Forest Fires Prediction is a single Jupyter notebook that studies the UCI Forest Fires dataset (Cortez and Morais, 2007). It first predicts the burned area as a regression problem, then turns the area into five classes from very low to very high and compares several classifiers. The notebook was written for Google Colab and includes forms where you enter weather values and read the predicted class. A short paper in Turkish describes the results.
 
 ---
@@ -41,6 +48,49 @@ The notebook walks through the problem from both directions.
 | <img src="docs/assets/readme/icons/sliders-horizontal.svg" width="18" height="18" alt=""> **Classes from K-Means** | K-Means centroids and fuzzy membership values produce the five labels. KNN, SVM with linear and polynomial kernels, logistic regression, an MLP and a Gaussian process classifier are compared. |
 | <img src="docs/assets/readme/icons/notebook-text.svg" width="18" height="18" alt=""> **Forms you can try** | Colab form fields take month, day, temperature, humidity, wind and rain, and optionally grid coordinates and FWI values, and print the predicted class. |
 | <img src="docs/assets/readme/icons/file-text.svg" width="18" height="18" alt=""> **A paper in Turkish** | The repository includes a paper that reports a best 5-fold cross-validation accuracy of 61.32 percent, from an SVM on month, weekday, temperature, humidity and wind. |
+
+## A quick tour
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/tour/data-dark.webp">
+        <img src="docs/assets/readme/tour/data-light.webp" alt="Saved notebook output showing the first five rows of the forest fires dataset">
+      </picture>
+      <h3>Dataset sample</h3>
+      The first five rows of the UCI data as the notebook printed them, with grid coordinates, month, fire weather indices, weather and burned area.
+    </td>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/tour/results-dark.webp">
+        <img src="docs/assets/readme/tour/results-light.webp" alt="Saved notebook output with three K-Means accuracy lines and the predicted classes of five models">
+      </picture>
+      <h3>Saved results</h3>
+      The notebook keeps its printed K-Means accuracies for 5, 10 and 100 clusters and the class each model predicted for an example input.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/tour/kmeans-dark.webp">
+        <img src="docs/assets/readme/tour/kmeans-light.webp" alt="Code card of the K-Means and logistic regression cells of the notebook">
+      </picture>
+      <h3>K-Means labels</h3>
+      K-Means with five clusters labels the area, and logistic regression is scored for 5, 10 and 100 clusters.
+    </td>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/tour/models-dark.webp">
+        <img src="docs/assets/readme/tour/models-light.webp" alt="Code card of the classifier cross-validation cells of the notebook">
+      </picture>
+      <h3>Classifier comparison</h3>
+      KNN, two SVMs, an MLP and a Gaussian process classifier are cross-validated on the same labels.
+    </td>
+  </tr>
+</table>
+
+<p align="center"><sub>The terminal cards show the outputs saved in the notebook, and the code cards show its cells as they are in the repository. Nothing was re-run.</sub></p>
 
 ## Features
 
@@ -99,6 +149,6 @@ If Forest Fires Prediction is useful to you, a ⭐ helps other people find it.
 
 ## License
 
-[MIT License](LICENSE). See the LICENSE file for the full text.
+[MIT License](LICENSE). Photos behind the screenshots are credited in [docs/assets/readme/CREDITS.md](docs/assets/readme/CREDITS.md).
 
 [![views](https://hits.sh/github.com/mertkayacs/Forestfires-Prediction-with-Machine-Learning.svg?view=today-total&style=flat-square&label=views&color=B4492F&labelColor=1E2A38)](https://github.com/mertkayacs/Forestfires-Prediction-with-Machine-Learning)
