@@ -30,7 +30,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/hero-dark.webp">
-    <img src="docs/assets/readme/hero-light.webp" alt="Notebook code that cross-validates KNN, SVM, MLP and Gaussian process classifiers" width="960">
+    <img src="docs/assets/readme/hero-light.webp" alt="Colab form from the notebook with input fields for fire weather indices, grid position, month, day, temperature, humidity, wind and rain, and the predicted class below" width="960">
   </picture>
 </p>
 
@@ -56,10 +56,10 @@ The notebook walks through the problem from both directions.
     <td width="50%" valign="top">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/tour/data-dark.webp">
-        <img src="docs/assets/readme/tour/data-light.webp" alt="Saved notebook output showing the first five rows of the forest fires dataset">
+        <img src="docs/assets/readme/tour/data-light.webp" alt="Saved notebook output showing the first and last five rows of the forest fires dataset and its 517 by 13 shape">
       </picture>
       <h3>Dataset sample</h3>
-      The first five rows of the UCI data as the notebook printed them, with grid coordinates, month, fire weather indices, weather and burned area.
+      The UCI data as the notebook printed it: grid coordinates, month, fire weather indices, weather and burned area, 517 rows in all.
     </td>
     <td width="50%" valign="top">
       <picture>
@@ -82,10 +82,10 @@ The notebook walks through the problem from both directions.
     <td width="50%" valign="top">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/tour/models-dark.webp">
-        <img src="docs/assets/readme/tour/models-light.webp" alt="Code card of the classifier cross-validation cells of the notebook">
+        <img src="docs/assets/readme/tour/models-light.webp" alt="Code card of the KNN, SVM and MLP cross-validation cells of the notebook">
       </picture>
       <h3>Classifier comparison</h3>
-      KNN, two SVMs, an MLP and a Gaussian process classifier are cross-validated on the same labels.
+      KNN, two SVMs and an MLP are cross-validated on the same labels, followed by a Gaussian process classifier.
     </td>
   </tr>
 </table>
